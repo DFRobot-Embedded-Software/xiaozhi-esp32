@@ -1,0 +1,23 @@
+{
+    "target": "esp32p4",
+    "builds": [
+        {
+            "name": "df-p4_ai_interaction_development_board-p4x",
+            "sdkconfig_append": [
+                "CONFIG_SLAVE_IDF_TARGET_ESP32C6=y",
+                "CONFIG_ESP_HOSTED_SDIO_HOST_INTERFACE=y",
+                "CONFIG_ESP_HOSTED_SDIO_4_BIT_BUS=y",
+                "CONFIG_ESP_HOSTED_PRIV_SDIO_PIN_CLK_SLOT_1=18",
+                "CONFIG_ESP_HOSTED_PRIV_SDIO_PIN_CMD_SLOT_1=19",
+                "CONFIG_ESP_HOSTED_PRIV_SDIO_PIN_D0_SLOT_1=14",
+                "CONFIG_ESP_HOSTED_PRIV_SDIO_PIN_D1_4BIT_BUS_SLOT_1=15",
+                "CONFIG_ESP_HOSTED_PRIV_SDIO_PIN_D2_4BIT_BUS_SLOT_1=16",
+                "CONFIG_ESP_HOSTED_PRIV_SDIO_PIN_D3_4BIT_BUS_SLOT_1=17",
+                "CONFIG_ESP_HOSTED_SDIO_GPIO_RESET_SLAVE=5",
+                "# CONFIG_ESP32P4_SELECTS_REV_LESS_V3 is not set",
+                "CONFIG_ESP32P4_REV_MIN_301=y",
+                "CONFIG_SPIRAM_MALLOC_ALWAYSINTERNAL=0"
+            ]
+        }
+    ]
+}
